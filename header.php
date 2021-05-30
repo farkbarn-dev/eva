@@ -10,10 +10,9 @@
   <meta name="keywords" content=""/>
   <meta name="author" content="@farkbarn" />
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="responsive.css" />
+  <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri()."/styles.css" ?>"/>
+  <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri()."/responsive.css" ?>"/>
   <link rel="shortcut icon" type="image/x-icon" href="img/img1.png">
-
 </head>
 
 <body>

@@ -1,26 +1,26 @@
 <?php include "header.php" ?>
   <section class="sec2">
     <p class="ppro">Productos destacados</p>
-    <section class="element">
-      <img src="img/bolacristal3.png" alt="">
-      <p class="productotit">producto principal</p>
-      <p class="val">150Є</p>
-    </section>
-    <section class="element">
-      <img src="img/cartas2.png" alt="">
-      <p class="productotit">producto principal 2</p>
-      <p class="val">125Є</p>
-    </section>
-    <section class="element">
-      <img src="img/altar.png" alt="">
-      <p class="productotit">producto principal 3</p>
-      <p class="val">15Є</p>
-    </section>
-    <section class="element">
-      <img src="img/cartas3.png" alt="">
-      <p class="productotit">producto principal 4</p>
-      <p class="val">50Є</p>
-    </section>
+
+    <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+	<?php $class='element'; ?>
+    	<article <?php post_class($class);?>>
+        <?php
+        if ( has_post_thumbnail() )
+          {
+            the_post_thumbnail();
+          } ?>
+        <p class="productotit"><?php the_title(); ?></p>
+	<?php $class2='val'; ?>
+        <p class="val"><?php echo get_the_excerpt(); ?></p>
+    	</article>
+
+    <?php endwhile; else: ?>
+    	<article>
+    		<p>No hay contenido a mostrar </p>
+    	</article>
+    <?php endif; ?>
+
   </section>
 
   <section class="sec3">
@@ -31,7 +31,7 @@
       <p class="pleer"><a class="aleermas" href="#">Leer más</a></p>
     </section>
     <section class="ImgQuiSom">
-      <img src="img/orunla.png" alt="">
+      <img src="<?php echo get_template_directory_uri(); ?>/img/orunla.png" alt="">
     </section>
   </section>
 
@@ -39,16 +39,22 @@
     <section class="left">
       <p class="pdat">Datos de ubicación</p>
       <section class="item1">
-        <img class="imgstar" src="img/star.png" alt="">
+	<section class="itemcir">
+        	<img class="imgstar" src="<?php echo get_template_directory_uri(); ?>/img/star.png" alt="">
+	</section>
         <p>Calle de Isaac Peral, 9, 28814</p>
         <p>Daganzo de Arriba, Madrid, España</p>
       </section>
       <section class="item2">
-        <img class="imgphone" src="img/phone.png" alt="">
+	<section class="itemcir">
+        	<img class="imgphone" src="<?php echo get_template_directory_uri(); ?>/img/phone.png" alt="">
+	</section>
         <p>608 43 19 90</p>
       </section>
       <section class="item3">
-        <img class="imgmail" src="img/mail.png" alt="">
+	<section class="itemcir">
+        	<img class="imgmail" src="<?php echo get_template_directory_uri(); ?>/img/mail.png" alt="">
+	</section>
         <p>info@ejemplo.com</p>
       </section>
     </section>
@@ -76,9 +82,9 @@
       <p class="phis">His rebum prompta ea, suas<br>verear in vix, mea esse salutandi<br>scriptorem te. Semper ornatus</p>
     </section>
     <section class="secitems">
-      <section class="secitemglo"><section class="globo"><img src="img/phone.png" alt=""></section><p class="pinfo">info@ejemplo.com <br>608 43 19 90</p></section>
-      <section class="secitemglo"><section class="globo"><img src="img/star.png" alt=""></section><p class="pcall">Calle de Isaac Peral, 9, 28814 <br>Daganzo de Arriba, Madrid, España</p> </section>
+      <section class="secitemglo"><section class="globo"><img src="<?php echo get_template_directory_uri(); ?>/img/phone.png" alt=""></section><p class="pinfo">info@ejemplo.com <br>608 43 19 90</p></section>
+      <section class="secitemglo"><section class="globo"><img src="<?php echo get_template_directory_uri(); ?>/img/star.png" alt=""></section><p class="pcall">Calle de Isaac Peral, 9, 28814 <br>Daganzo de Arriba, Madrid, España</p> </section>
     </section>
-    <section class="secsig"><p class="psig">Síguenos</p><br> <a href="#"><img class="imgsigfac" src="img/facebook.png" alt=""></a> <a href="#"><img class="imgsigfac" src="img/instagram.png" alt=""></a> </section>
+    <section class="secsig"><p class="psig">Síguenos</p><br> <a href="#"><img class="imgsigfac" src="<?php echo get_template_directory_uri(); ?>/img/facebook.png" alt=""></a> <a href="#"><img class="imgsigfac" src="<?php echo get_template_directory_uri(); ?>/img/instagram.png" alt=""></a> </section>
   </section>
 <?php include "footer.php" ?>

@@ -63,12 +63,12 @@ a{text-decoration: none;color:#000;}
 .sec2{float: left;}
 .ppro{float: left;width: 100%;text-align:center;color:#FFF;font-family: script;font-size: 50px;margin-bottom: 50px;}
 .element{width: 20%;float: left;margin: 0 2%;}
-.element img{width: 100%;float: left;margin: 0 1%;border: 2px solid white;border-radius: 10px;}
+.element img{width: 100%;max-height: 200px;float: left;margin: 0 1%;border: 2px solid white;border-radius: 10px;}
 .element p{text-align:center;color:#FFF;}
 .element p.productotit{margin-top:180px;margin-bottom:10px;text-transform:capitalize;}
 .element p.val{color:#855386;font-weight:bold;}
 
-.QuiSom{width: 30%;float: left;margin-left: 10%;padding: 0 5%;margin-top: 60px;color:#FFF;border: 1px solid #FFF;background-color: black;background-image: url(img/fondo2.png);background-repeat: no-repeat;background-position: bottom right;background-size: cover;}
+.QuiSom{width: 30%;float: left;margin-left: 10%;padding: 0 5%;margin-top: 60px;margin-bottom:60px;color:#FFF;border: 1px solid #FFF;background-color: black;background-image: url(img/fondo2.png);background-repeat: no-repeat;background-position: bottom right;background-size: cover;}
 .QuiSom a{color:#FFF;}
 .ImgQuiSom{float: left;margin-left: 10%;margin-top: 60px;margin-bottom: 60px;}
 .PQui{font-family: 'script';font-size: 30px;text-align:center;margin: 20px;}
@@ -105,3 +105,13 @@ a{text-decoration: none;color:#000;}
 .footer a{color:#FFF;text-align:center;}
 .ppie{width:100%;text-align:center;}
 .line{border-right: 1px solid #FFF;padding-left: 5px;padding-right: 10px;}
+.line2{padding-left: 5px;padding-right: 10px;}
+
+
+
+.element img{width: 100%;max-height: 200px;float: left;margin: 0 1%;border: 2px solid white;border-radius: 10px;}
+.itemcir{float:left;margin-right:10px; background-color: white;
+    width: 28px;
+    height: 28px;
+    border-radius: 100px;
+    padding: 5px;}

@@ -11,7 +11,7 @@
             the_post_thumbnail();
           } ?>
         <p class="productotit"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></p>
-        <p class="val"><?php echo get_the_excerpt(); ?></p>
+        <p class="val"><?php /*echo get_the_excerpt();*/echo '€ '; the_field('valor'); ?></p>
     	</article>
 
     <?php endwhile; else: ?>

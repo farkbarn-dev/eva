@@ -11,7 +11,6 @@
             the_post_thumbnail();
           } ?>
         <p class="productotit"><?php the_title(); ?></p>
-	<?php $class2='val'; ?>
         <p class="val"><?php echo get_the_excerpt(); ?></p>
     	</article>
 

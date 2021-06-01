@@ -1,0 +1,21 @@
+@media only screen and (max-width: 1200px) {
+  .rrss {width: 50%;padding-left: 50%;}
+  .links {width: 60%;}
+}
+
+@media only screen and (max-width: 992px) {
+  .sec1 {width: 80%;padding: 50px 10%}
+  .sec2 {width: 90%;padding: 50px 5% 70px;}
+  .itemsdir {width: 80%;padding-left: 10%;padding-right: 10%;}
+}
+
+@media only screen and (max-width: 768px) {
+  .links {width: 80%;}
+  .QuiSom {width: 60%;}
+  .ImgQuiSom {margin-left: 25%;}
+}
+
+@media only screen and (max-width: 480px) {
+  .links {width: 100%;}
+  .sec1 {width: 100%;padding: 50px 0% 50px 0%;}
+}

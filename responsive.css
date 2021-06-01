@@ -19,3 +19,10 @@
   .links {width: 100%;}
   .sec1 {width: 100%;padding: 50px 0% 50px 0%;}
 }
+
+@media only screen and (max-width: 320px){
+  .links a {margin: 0 5px;}
+  .shapes {width: 100%;margin-bottom: 10px;}
+  .sec2 article {width: 100%;float: left;margin: 0 2%;}
+  .ImgQuiSom {margin-left: 0%;}
+}
